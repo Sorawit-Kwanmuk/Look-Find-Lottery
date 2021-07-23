@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav>
+                <ul class="menu">
+                    <li class="logo"><a href="#">LOOK&FIND LOTTERY</a></li>
+                    <li class="item two"><a href="./Home_page.html">หน้าหลัก</a></li>
+                    <li class="item two"><a href="./Profile_editor_page.html">หน้าโปรไฟล์</a></li>
+                    <li class="item two"><a href="./Seller_page.html">หน้าผู้ขาย</a></li>
+                    <li class="item button secondary"><a href="./Login_page.html">ออกจากระบบ</a></li>
+                    <li class="toggle"><span class="bars"></span></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="search_area">
+            <form action="" class="search_form">
+                <!-- <div class="half_front_search_box"> -->
+                <input type="text" class="search_box">
+                <!-- </div> -->
+                <!-- <div class="half_end_search_box"> -->
+                <select name="search_option" id="search_option">
+                    <option value="full_number">เลข 6 ตัว</option>
+                    <option value="front_three_number">เลขหน้า 3 ตัว</option>
+                    <option value="end_three_number">เลขท้าย 3 ตัว</option>
+                    <option value="end_two_number">เลขท้าย 2 ตัว</option>
+                </select>
+                <button type="submit">ค้นหา</button>
+                <!-- </div> -->
+            </form>
+        </section>
+        <section class="output_search_area">
+
+            <div class="output_search">
+                <div class="label_style"><label for="" class="label_seller">ผลการค้นหา</label></div>
+
+            </div>
+
+        </section>
+    </div>
+</body>
+
+</html>

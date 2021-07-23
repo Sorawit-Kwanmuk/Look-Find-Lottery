@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile editor page</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav>
+                <ul class="menu">
+                    <li class="logo"><a href="#">LOOK&FIND LOTTERY</a></li>
+                    <li class="item two"><a href="./Home_page.html">หน้าหลัก</a></li>
+                    <li class="item two"><a href="./Profile_editor_page.html">หน้าโปรไฟล์</a></li>
+                    <li class="item two"><a href="./Seller_page.html">หน้าผู้ขาย</a></li>
+                    <li class="item button secondary"><a href="./Login_page.html">ออกจากระบบ</a></li>
+                    <li class="toggle"><span class="bars"></span></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="profile_editor_area">
+            <div class="profile_editor_board">
+                <div class="label_style_profile_editor"><label for="" class="label_profile_editor">แก้ไขโปรไฟล์</label>
+                </div>
+                <div class="profile_editer_top">
+                    <div class="profile_picture">
+                        <img src="./img/Human icon.png" alt="">
+                    </div>
+                    <div class="profile_qr">
+                        <img src="./img/MyQR.JPG" alt="">
+                    </div>
+
+                </div>
+                <div class="profile_editer_middle">
+                    <div class="div_form_editor">
+                        <form action="" class="form_style">
+                            <div class="div name_editor">
+                                <div class="border">
+                                    <label for="name_editor" class="label of_ame_editor">ชื่อ-นามสกุล</label>
+                                </div>
+                                <input type="text" class="name_editor">
+                            </div>
+                            <div class="div phone_editor">
+                                <div class="border">
+                                    <label for="phone_editor" class="label of_phone_editor">เบอร์โทร</label>
+                                </div>
+                                <input type="text" class="phone_editor">
+                            </div>
+                            <div class="div id_line_editor">
+                                <div class="border">
+                                    <label for="id_line_editor" class="label of_id_line_editor"> ID LINE</label>
+                                </div>
+                                <input type="text" class="id_line_editor">
+                            </div>
+                            <div class="div facebook_editor">
+                                <div class="border">
+                                    <label for="facebook_editor" class="label of_facebook_editor">Facebook</label>
+                                </div>
+                                <input type="text" class="facebook_editor">
+                            </div>
+                            <div class="div access_editor">
+                                <div class="border border_access">
+                                    <label for="access_editor" class="label of_access_editor">สถานทื่ ณ
+                                        ปัจจุบัน</label>
+                                </div>
+                                <input type="text" class="access_editor">
+                            </div>
+                            <div class="div etc_editor">
+                                <div class="border border_etc">
+                                    <label for="etc_editor" class="label of_etc_editor">ข้อมูลอื่นๆ</label>
+                                </div>
+                                <input type="text" class="etc_editor">
+                            </div>
+                            <button type="submit">บันทึก</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </div>
+
+</body>
+
+</html>
