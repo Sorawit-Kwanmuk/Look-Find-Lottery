@@ -214,7 +214,7 @@ button {
 
 .search_form select {
     height: 40px;
-    width: 120px;
+    width: 150px;
     font-size: 20px;
 }
 
@@ -233,11 +233,13 @@ button {
 }
 
 .output_search {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
     max-width: 1200px;
     background-color: #d6ecff;
     border-radius: 10px;
     margin: 0% auto;
-
     height: 90vh
 }
 
@@ -251,6 +253,61 @@ button {
 .output_search>.label_style {
     height: 25px;
     border-radius: 10px 10px 0px 0px;
+}
+
+.output_search>.output_search_field {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.output_search_field>.lottery_one {
+    margin: 10px 5px 10px 5px;
+    /* padding-top: 20vw;
+    padding-right: 20vw; */
+    width: 300px;
+    height: 100px;
+    background-color: #64b9ec;
+}
+
+.output_search_field>.lottery_two {
+    margin: 10px 5px 10px 5px;
+    /* padding-top: 20vw;
+    padding-right: 20vw; */
+    width: 300px;
+    height: 100px;
+    background-color: #64b9ec;
+}
+
+.output_search_field>.lottery_three {
+    margin: 10px 5px 10px 5px;
+    /* padding-top: 20vw;
+    padding-right: 20vw; */
+    width: 300px;
+    height: 100px;
+    background-color: #64b9ec;
+}
+
+.output_search_field>.lottery_four {
+    margin: 10px 5px 10px 5px;
+    /* padding-top: 20vw;
+    padding-right: 20vw; */
+    width: 300px;
+    height: 100px;
+    background-color: #64b9ec;
+}
+
+@media (max-width: 400px) {
+    .output_search>.output_search_field {
+        display: flex;
+        flex-flow: wrap;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+
+    }
 }
 
 /*seller page*/
