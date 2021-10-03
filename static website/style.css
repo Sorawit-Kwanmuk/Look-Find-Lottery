@@ -248,6 +248,8 @@ button {
     background-color: #0069b4;
     color: #d6ecff;
     font-size: 20px;
+    width: 100%;
+
 }
 
 .output_search>.label_style {
@@ -452,22 +454,23 @@ button {
     padding: 10px;
 }
 
-.midle_input>.input_lottery_access {
+#input_lottery_access {
     text-align: top;
+    width: 100%;
+    min-height: 0;
+    padding-bottom: 50px;
 }
 
-.midle_input>.input_lottery_access {
-    width: 100%;
-    min-height: 50px;
-}
+
 
 .half_top_input>.div1 {
     display: inline-block;
-
     background-color: #b1daf3;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px 10px 10px 10px;
     padding-left: 5px;
-
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    padding-right: 2px;
 }
 
 .midle_input>.label_lottery_access {
@@ -1087,21 +1090,45 @@ button {
     border-radius: 10px 0px 0px 10px;
 }
 
+
+
+#input_lottery_number,
+#input_lottery_value {
+    border-radius: 0 10px 10px 0px;
+}
+
+.half_bottom_input>button {
+    border-radius: 10px;
+}
+
 .div>input {
 
     max-width: 800px;
     width: 100%;
     height: auto;
     border-radius: 0px 10px 10px 0px;
+    padding-left: 5px;
 
 }
 
 .div>.border_access {
-    height: 100px;
+    height: auto
+}
+
+.div>#access_editor {
+    padding-bottom: 50px;
+    padding-top: 5px;
+    padding-left: 5px;
 }
 
 .div>.border_etc {
-    height: 100px;
+    height: auto
+}
+
+.div>#etc_editor {
+    padding-bottom: 50px;
+    padding-top: 5px;
+    padding-left: 5px;
 }
 
 .form_style>button {
