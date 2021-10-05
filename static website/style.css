@@ -1088,6 +1088,8 @@ button {
     height: 30px;
     margin: 0 auto;
     border-radius: 10px 0px 0px 10px;
+    padding-top: 5px;
+
 }
 
 
@@ -1259,6 +1261,8 @@ button {
     justify-content: center;
     margin-top: 10vh;
     font-size: 22px;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -1349,4 +1353,21 @@ button {
     .div_register_button_login>.button_register_register_page {
         font-size: 16px;
     }
+}
+
+#image_profile_editor,
+#image_qr_code_line_editor {
+    background-color: white;
+    padding-top: 5px;
+
+}
+
+.notification {
+    background: #64b9ec;
+    color: red;
+    padding-top: 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 5px grey;
 }
